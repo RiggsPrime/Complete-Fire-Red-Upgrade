@@ -6,6 +6,24 @@
 #include "../../include/constants/battle_ai.h"
 #include "../../include/easy_text.h"
 
+const struct TrainerMonNoItemDefaultMoves sParty_PalletTownTest[] ={
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_SCEPTILE,
+    },
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_MANECTRIC,
+    },
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_EXPLOUD,
+    },
+};
+
 const struct TrainerMonNoItemDefaultMoves sParty_RivalLabFire[] = {
     {
         .iv = 0,
@@ -31,13 +49,27 @@ const struct TrainerMonNoItemDefaultMoves sParty_RivalLabWater[] = {
 };
 
 #define NO_NAME {_END, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE}
+#define TEST_NAME {_B, _r, _e, _n, _d, _a, _n, _END}
 #define RIVAL_NAME {_G, _a, _r, _y, _END}
-
 
 const struct Trainer gTrainers[] = {
     [TRAINER_NONE] = {
         .trainerName = NO_NAME,
     },
+
+    [TRAINER_PALLET_TOWN_TEST] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_ELITE_4,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerName = TEST_NAME,
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE,
+        .partySize = NELEMS(sParty_PalletTownTest),
+        .party = {.NoItemDefaultMoves = sParty_PalletTownTest}
+    },
+
     [TRAINER_RIVAL_OAKS_LAB_CHARMANDER] = {
         .partyFlags = 0,
         .trainerClass = CLASS_BEAUTY,

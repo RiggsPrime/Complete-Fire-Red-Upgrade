@@ -5309,9 +5309,17 @@ BS_245_Blank:
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-.global BS_246_Blank
-BS_246_Blank:
-	goto BS_STANDARD_HIT
+.global BS_246_RoarOfTime
+BS_246_RoarOfTime:
+	attackcanceler
+	attackstring
+	pause DELAY_HALFSECOND
+	accuracycheck BS_MOVE_MISSED 0x0
+	ppreduce
+	attackstringnoprotean
+	setfutureattack FAILED
+	printfromtable 0x83FE5EE
+	goto BS_HIT_FROM_DAMAGE_CALC
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 

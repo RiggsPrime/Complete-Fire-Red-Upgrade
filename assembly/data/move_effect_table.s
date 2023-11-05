@@ -261,7 +261,7 @@ gBattleScriptsForMoveEffects:
 .word BS_243_DamageSetTerrain
 .word BS_244_Blank
 .word BS_245_Blank
-.word BS_246_Blank
+.word BS_246_RoarOfTime
 .word BS_247_Blank
 .word BS_248_Blank
 .word BS_249_Blank

@@ -7972,7 +7972,7 @@ const struct BattleMove gBattleMoves[] =
 
 	[MOVE_ROAROFTIME] =
 	{
-		.effect = EFFECT_RECHARGE,
+		.effect = EFFECT_ROAR_OF_TIME,
 		.power = 150,
 		.type = TYPE_DRAGON,
 		.accuracy = 90,
@@ -7980,7 +7980,7 @@ const struct BattleMove gBattleMoves[] =
 		.secondaryEffectChance = 0,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
-		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.flags = FLAG_PROTECT_AFFECTED,
 		.z_move_power = 200,
 		.split = SPLIT_SPECIAL,
 		.z_move_effect = 0

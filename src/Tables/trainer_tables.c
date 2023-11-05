@@ -12,15 +12,35 @@ const struct TrainerMonNoItemDefaultMoves sParty_PalletTownTest[] ={
         .lvl = 50,
         .species = SPECIES_SCEPTILE,
     },
+
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_SALAMENCE,
+    },
+
     {
         .iv = 0,
         .lvl = 50,
         .species = SPECIES_MANECTRIC,
     },
+
     {
         .iv = 0,
         .lvl = 50,
         .species = SPECIES_EXPLOUD,
+    },
+    
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_ABSOL,
+    },
+    
+    {
+        .iv = 0,
+        .lvl = 50,
+        .species = SPECIES_MILOTIC,
     },
 };
 

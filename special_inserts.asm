@@ -8,19 +8,7 @@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Game Speed Up
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-.org 0x890, 0xFF
-main:
-	ldr r2, .SuperBits
-	ldrh r3, [r2]
-	mov r0, #1	
-	bic r3, r0
-	strh r3, [r2]
-loop_label:
-	swi #2
-	ldrh r3, [r2]
-	tst r3, r0
-	beq loop_label
-	bx lr
+@ Deleted for the time being. Check "Master Folder - special_inserts.asm.txt" to add it back in.
 
 .align 2
 .SuperBits: .word 0x0300310C
@@ -745,19 +733,7 @@ SummaryScreenExpDisplay2:
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Multichoice Pointers
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-.org 0x3E05B0, 0xFF
-.word MULTICHOICE_STRING_LOADER
-.word 0x2
-.word MULTICHOICE_STRING_LOADER
-.word 0x3
-.word MULTICHOICE_STRING_LOADER
-.word 0x4
-.word MULTICHOICE_STRING_LOADER
-.word 0x5
-.word MULTICHOICE_STRING_LOADER
-.word 0x6
-.word MULTICHOICE_STRING_LOADER
-.word 0x7
+@ Deleted for the time being. Check "Master Folder - special_inserts.asm.txt to add it back in."
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Dynamic Overworld Palettes

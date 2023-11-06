@@ -2887,6 +2887,12 @@ Format = '''[pal<`ucp4`> id:|h unused:]2'''
 DefaultHash = '''74F01E53'''
 
 [[NamedAnchors]]
+Name = '''graphics.overworld.sprites'''
+Address = 0xEB1000
+Format = '''[data<[starterbytes:|h paletteid:|h secondid:|h length: width: height: info.|t|palSlot::|shadowSize:|inanimate.|reflectionPalette. footprint.owfootprints unused: distribution<> sizedraw<> animation<> sprites<`osl`> ramstore<>]1>]220'''
+DefaultHash = '''7BDF419E'''
+
+[[NamedAnchors]]
 Name = '''graphics.overworld.sprites2'''
 Address = 0x3A0010
 Format = '''[data<[starterbytes:|h paletteid:|h a<> b<> sprites<`osl|graphics.overworld.palettes2:id=`> d<> e<>]1>]36'''

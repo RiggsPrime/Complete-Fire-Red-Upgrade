@@ -48,7 +48,7 @@ const struct TrainerMonNoItemDefaultMoves sParty_Guy[] = {
     {
         .iv = 0,
         .lvl = 5,
-        .species = SPECIES_ARCEUS,
+        .species = SPECIES_RAIKOU,
     }
 };
 

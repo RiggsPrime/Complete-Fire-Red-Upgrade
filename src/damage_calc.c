@@ -3256,12 +3256,6 @@ static u16 AdjustBasePower(struct DamageCalc* data, u16 power)
 			if (data->moveType == TYPE_STEEL)
 				power = (power * 15) / 10;
 			break;
-		
-		case ABILITY_STONEWORK:
-		//1.5x Boost
-			if (data->moveType == TYPE_ROCK)
-				power = (power * 15) / 10;
-			break;
 
 		case ABILITY_WATERBUBBLE:
 		//2x Boost

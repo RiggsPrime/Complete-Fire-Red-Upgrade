@@ -264,4 +264,3 @@ gAbilityDescriptions:
 .word DESC_MIMICRY
 .word DESC_SCREENCLEANER
 .word DESC_PASTEL_VEIL
-.word DESC_STONEWORK

@@ -8,7 +8,7 @@
 .global EventScript_PalletTown_FatGuy
 EventScript_PalletTown_FatGuy:
     msgbox gText_PalletTown_FatGuy MSG_FACE
-    givepokemon SPECIES_KINGLER 25 ITEM_RARE_CANDY 0 0 0
+    givepokemon SPECIES_MAGNEZONE 50 ITEM_RARE_CANDY 0 0 0
     setflag 0x0828
     end
 

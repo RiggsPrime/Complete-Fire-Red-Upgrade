@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.4'''
-FreeSpaceSearch = '''000200'''
+FreeSpaceSearch = '''35BCC0'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = False
@@ -5871,7 +5871,7 @@ DefaultHash = '''3B2A7E42'''
 157 = [
    '''StartOldManTutorialBattle''',
    '''ChangePokemonNickname''',
-   '''ChoosePartyMon''',# Selected index will be stored in 0x8004. 0x8004=1 for lead pokemon, 0x8004=6 for last pokemon, 0x8004=7 for cancel. Requires `waitstate` after.
+   '''ChoosePartyMon''',
 ]
 163 = [
    '''Script_IsFanClubMemberFanOfPlayer''',
@@ -6007,7 +6007,7 @@ DefaultHash = '''3B2A7E42'''
    '''StartSouthernIslandBattle''',
 ]
 327 = [
-   '''GetPartyMonSpecies''',# Read party index from 0x8004, return species
+   '''GetPartyMonSpecies''',
    '''IsSelectedMonEgg''',
 ]
 331 = [
@@ -6062,7 +6062,7 @@ DefaultHash = '''3B2A7E42'''
    '''GetNumLevelsGainedForRoute5DaycareMon''',
    '''TakePokemonFromRoute5Daycare''',
    '''DoSeagallopFerryScene''',
-   '''DoesPlayerPartyContainSpecies''',# read species from 0x8004, if it's in the party, return 1 (recomend returning to 0x800D)
+   '''DoesPlayerPartyContainSpecies''',
    '''Script_SetHelpContext''',
    '''BackupHelpContext''',
    '''RestoreHelpContext''',
@@ -6882,7 +6882,7 @@ Destination = '''data.items.stats'''
 [[GotoShortcut]]
 Name = '''Maps'''
 Image = '''data.maps.banks/3/maps/0/map/0/layout/0/blockmap/'''
-Destination = '''maps.3-0'''
+Destination = '''maps.3-0 (Pallet Town)'''
 
 #################################
 [[TableGroup]]

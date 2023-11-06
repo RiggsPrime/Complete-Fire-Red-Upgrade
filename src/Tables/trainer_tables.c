@@ -44,10 +44,19 @@ const struct TrainerMonNoItemDefaultMoves sParty_PalletTownTest[] ={
     },
 };
 
-const struct TrainerMonNoItemDefaultMoves sParty_RivalLabFire[] = {
+const struct TrainerMonNoItemDefaultMoves sParty_Guy[] = {
     {
         .iv = 0,
         .lvl = 5,
+        .species = SPECIES_ARCEUS,
+    }
+};
+
+
+const struct TrainerMonNoItemDefaultMoves sParty_RivalLabFire[] = {
+    {
+        .iv = 0,
+        .lvl = 25,
         .species = SPECIES_TORCHIC,
     },
 };
@@ -55,7 +64,7 @@ const struct TrainerMonNoItemDefaultMoves sParty_RivalLabFire[] = {
 const struct TrainerMonNoItemDefaultMoves sParty_RivalLabGrass[] = {
     {
         .iv = 0,
-        .lvl = 5,
+        .lvl = 25,
         .species = SPECIES_TREECKO,
     },
 };
@@ -63,7 +72,7 @@ const struct TrainerMonNoItemDefaultMoves sParty_RivalLabGrass[] = {
 const struct TrainerMonNoItemDefaultMoves sParty_RivalLabWater[] = {
     {
         .iv = 0,
-        .lvl = 5,
+        .lvl = 25,
         .species = SPECIES_MUDKIP,
     },
 };
@@ -71,6 +80,7 @@ const struct TrainerMonNoItemDefaultMoves sParty_RivalLabWater[] = {
 #define NO_NAME {_END, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE, _SPACE}
 #define TEST_NAME {_B, _r, _e, _n, _d, _a, _n, _END}
 #define RIVAL_NAME {_G, _a, _r, _y, _END}
+#define BUG_CATCHER_GUY_NAME {_G, _u, _y, _END}
 
 const struct Trainer gTrainers[] = {
     [TRAINER_NONE] = {
@@ -88,6 +98,19 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE,
         .partySize = NELEMS(sParty_PalletTownTest),
         .party = {.NoItemDefaultMoves = sParty_PalletTownTest}
+    },
+
+    [TRAINER_GUY] = {
+        .partyFlags = 0,
+        .trainerClass = CLASS_BUG_CATCHER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = BUG_CATCHER_GUY_NAME,
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_CHECK_GOOD_MOVE,
+        .partySize = NELEMS(sParty_Guy),
+        .party = {.NoItemDefaultMoves = sParty_Guy}
     },
 
     [TRAINER_RIVAL_OAKS_LAB_CHARMANDER] = {
